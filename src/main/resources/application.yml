@@ -1,0 +1,12 @@
+spring:
+  graphql:
+    path: /graphql  # Explicitly set the endpoint
+    graphiql:
+      enabled: true # Enable GraphiQL for testing
+    schema:
+      printer:
+        enabled: true
+logging:
+  level:
+    org.springframework.graphql: DEBUG
+    org.springframework.web: DEBUG

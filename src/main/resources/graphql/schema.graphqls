@@ -1,0 +1,66 @@
+type Query {
+    recognitions: [Recognition!]!
+    users: [User!]!
+    analytics: AnalyticsResponse
+}
+
+type Mutation {
+    createRecognition(input: RecognitionInput!): Recognition
+}
+
+type Recognition {
+    id: ID!
+    senderId: String!
+    receiverId: String!
+    message: String!
+    emoji: String!
+    visibility: Visibility!
+    timestamp: String!
+    sender: User
+    receiver: User
+}
+
+type User {
+    id: ID!
+    name: String!
+    team: String!
+    role: String!
+}
+
+input RecognitionInput {
+    senderId: String!
+    receiverId: String!
+    message: String!
+    emoji: String!
+    visibility: Visibility!
+}
+
+enum Visibility {
+    PUBLIC
+    PRIVATE
+    ANONYMOUS
+}
+
+type AnalyticsResponse {
+    teamStats: [TeamStat!]!
+    keywordStats: [KeywordStat!]!
+    engagementStats: EngagementStat!
+}
+
+type TeamStat {
+    team: String!
+    sentCount: Int!
+    receivedCount: Int!
+}
+
+type KeywordStat {
+    keyword: String!
+    count: Int!
+}
+
+type EngagementStat {
+    totalRecognitions: Int!
+    averageRecognitionsPerUser: Float!
+    mostRecognized: String!
+    mostActiveSender: String!
+}
