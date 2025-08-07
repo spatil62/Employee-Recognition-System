@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.xnest.recognition.RecognitionServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-08-07T19:56:57" hostname="Snehas-MacBook-Air.local" time="0.109">
+<testsuite name="com.xnest.recognition.RecognitionServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-08-07T20:08:13" hostname="Snehas-MacBook-Air.local" time="0.118">
   <properties/>
-  <testcase name="testCreateRecognition()" classname="com.xnest.recognition.RecognitionServiceTest" time="0.099"/>
-  <testcase name="testNotificationSubscription()" classname="com.xnest.recognition.RecognitionServiceTest" time="0.009"/>
+  <testcase name="testCreateRecognition()" classname="com.xnest.recognition.RecognitionServiceTest" time="0.095"/>
+  <testcase name="testNotificationSubscription()" classname="com.xnest.recognition.RecognitionServiceTest" time="0.019"/>
   <testcase name="testAnonymousRecognition()" classname="com.xnest.recognition.RecognitionServiceTest" time="0.001"/>
-  <system-out><![CDATA[14:56:57.302 [Test worker] INFO com.xnest.recognition.service.RecognitionService -- Recognition created from Alice to Bob
-14:56:57.321 [Test worker] INFO com.xnest.recognition.service.RecognitionService -- Recognition created from Alice to Bob
-14:56:57.322 [Test worker] INFO com.xnest.recognition.service.RecognitionService -- Recognition created from Anonymous to Bob
+  <system-out><![CDATA[15:08:13.577 [Test worker] INFO com.xnest.recognition.service.RecognitionService -- Recognition created from Alice to Bob
+15:08:13.609 [Test worker] INFO com.xnest.recognition.service.RecognitionService -- Recognition created from Alice to Bob
+15:08:13.612 [Test worker] INFO com.xnest.recognition.service.RecognitionService -- Recognition created from Anonymous to Bob
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
